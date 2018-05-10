@@ -13,6 +13,8 @@ class TwitchBot
         #nickname
         @nickname = "YOUR_NICKNAME_HERE"
         #oath token
+	#you get your oath token by going to twitchapp.com/tmi and copying the key
+	#it gives you
         @password = "YOUR_OATH_TOKEN_HERE"
         #channel of twitch account
 	#for example, type "ninja" if you're going to ninja's channel
