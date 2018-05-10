@@ -44,28 +44,28 @@ class TwitchBot
             #some regex
             if message.match(/PRIVMSG ##{@channel} :(.*)$/)
                 #content is the message that twitch users put in chat
-		content = $~[1]
-		#username is the name of the user that sent that message
-                username = message.match(/@(.*).tmi.twitch.tv/)[1]
+		    content = $~[1]
+		    #username is the name of the user that sent that message
+            username = message.match(/@(.*).tmi.twitch.tv/)[1]
 
-		        #You should edit these to suit your needs.
-		        #This is an example of the bot responding to a Command
-                if content.include? "*bots" or content.include? "*bot"
-                    write_to_chat("I thought I put these bots on hard.")
-                end
+		    #You should edit these to suit your needs.
+	        #This is an example of the bot responding to a Command
+            if content.include? "*bots" or content.include? "*bot"
+                write_to_chat("I thought I put these bots on hard.")
+            end
+               
+            #This is an example of the bot performing an action based on
+            #a trigger word.
+            if content.include? "bad word or whatever"
+                puts username
+                #Types "/timeout" to timeout the offending user
+                write_to_chat("/timeout #{username} 800")
+            end
 
-		        #This is an example of the bot performing an action based on
-		        #a trigger word.
-                if content.include? "bad word or whatever"
-                    puts username
-                    #Types "/timeout" to timeout the offending user
-                    write_to_chat("/timeout #{username} 800")
-                end
-
-                #This is an example of banning a user for breaking chat rules
-                if content.include? "racial explitive or whatever"
-                    write_to_chat("/ban #{username}")
-                end
+            #This is an example of banning a user for breaking chat rules
+            if content.include? "racial explitive or whatever"
+                write_to_chat("/ban #{username}")
+            end
 
             end
         end
