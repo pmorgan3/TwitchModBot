@@ -1,0 +1,13 @@
+//Racial
+nigger
+niggr
+
+//Bad
+shit
+cunt
+
+//Bot
+*bot
+*bots
+!bot
+!bots
