@@ -1,0 +1,13 @@
+//Racial
+****
+*****
+
+//Bad
+****
+*****
+
+//Bot
+*bot
+*bots
+!bot
+!bots

@@ -1,0 +1,3 @@
+//NickName: PUT ANYTHING HERE
+//Password(Auth): PUT AUTH CODE HERE
+//Channel: PUT THE DESIRED CHANNEL NAME
